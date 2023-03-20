@@ -4,17 +4,22 @@ public class Person {
 	private String vorname;
 	private String name;
 	
+	public Person(String name, String vorname)
+	{
+		this.name = name;
+		this.vorname = vorname;
+	}
 	
 	// Methode um den Namen zu setzen
-	public void setName(String pName)
+	public void setName(String name)
 	{
-		name = pName;
+		this.name = name;
 	}
 	
 	// Methode um den Vornamen zu setzen
-	public void setVorname(String pVorname)
+	public void setVorname(String vorname)
 	{
-		vorname = pVorname;
+		this.vorname = vorname;
 	}
 	
 	public String getName()
@@ -25,5 +30,10 @@ public class Person {
 	public String getVorname()
 	{
 		return vorname;
+	}
+	
+	public void printCredentials()
+	{
+		System.out.println("Vorname: " + vorname + System.lineSeparator() + "Nachname: " + name);
 	}
 }
