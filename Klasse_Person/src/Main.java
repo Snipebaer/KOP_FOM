@@ -6,6 +6,9 @@ public class Main {
 		
 		Person xy = new Person("Simgri", "Simon");	
 		xy.printCredentials();
+		
+		xy.setName("lexi");
+		xy.printCredentials();
 		//System.out.println("Vorname: " + xy.getVorname() + System.lineSeparator() + "Nachname: " + xy.getName());
 	}
 
