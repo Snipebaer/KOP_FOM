@@ -2,7 +2,15 @@
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Person xy = new Person();
+	
+		xy.setVorname("Simon");
+		xy.setName("Simgri");
+		
+		
+		System.out.println("Vorname: " + xy.getVorname() + System.lineSeparator() + "Nachname: " + xy.getName());
+		
 
 	}
 
