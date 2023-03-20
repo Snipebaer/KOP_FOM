@@ -1,11 +1,13 @@
+package aufgabe1_3;
 
 public class Ausleiher extends Person{
 	
 	private int ausleiherNummer;
 	
-	public Ausleiher(String vorname, String nachname)
+	public Ausleiher(String vorname, String nachname, int ausleiherNummer)
 	{
-		super(vorname, nachname);		
+		super(vorname, nachname);	
+		this.ausleiherNummer = ausleiherNummer;
 	}
 	
 	public int getAusleihernummer()
