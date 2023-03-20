@@ -1,5 +1,10 @@
 package aufgabe1;
 
+/* Die Klasse Person verwaltet Personendaten
+ * @version 1.0
+ * @author Kilian
+ */
+
 public class Person {
 	
 	private static int anzahlPersonen;
@@ -21,7 +26,9 @@ public class Person {
 		return anzahlPersonen;
 	}
 	
-	// Methode um den Namen zu setzen
+	/* Die Methode setName() setzt den Namen der Person.
+	 * @param n Name der Person
+	 */
 	public void setName(String name)
 	{
 		this.name = name;
@@ -33,6 +40,9 @@ public class Person {
 		this.vorname = vorname;
 	}
 	
+	/* Die Methode getName() gibt den Namen der Person zurück.
+	 * @return Name der Person vom Typ String.
+	 */
 	public String getName()
 	{
 		return name;
