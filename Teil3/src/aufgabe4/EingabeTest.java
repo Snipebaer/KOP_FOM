@@ -13,9 +13,12 @@ public class EingabeTest {
 		System.out.print("Zweite Zahl eingeben: ");
 		int zahl2 = eingabe.nextInt();
 		
+		eingabe.close();
+		
 		int summe = zahl1 + zahl2;
 		
 		System.out.println(zahl1 + " + " + zahl2 + " ist Summe: " + summe);
+		
 		
 
 	}
