@@ -10,12 +10,12 @@ public class TestParameter {
 		
 		p1.printCredentials();
 		
-		veränderePerson(p1);
+		veraenderePerson(p1);
 		
 		p1.printCredentials();
 	}
 	
-	public static void veränderePerson(Person person)
+	public static void veraenderePerson(Person person)
 	{
 		person.setName("Weihnachtsmann");
 		person.printCredentials();
