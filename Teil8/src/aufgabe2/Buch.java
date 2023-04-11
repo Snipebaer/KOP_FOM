@@ -13,11 +13,11 @@ public class Buch {
 	
 	private static int anzahlBuecher;
 	
-	public Buch()
-	{
-		alleBuecher.add(this);
-		anzahlBuecher++;
-	}
+//	public Buch()
+//	{
+//		alleBuecher.add(this);
+//		anzahlBuecher++;
+//	}
 	
 	public Buch(String titel, String isbn, int anzahlExemplare)
 	{
@@ -66,13 +66,14 @@ public class Buch {
 	
 	public static void printAlleBuecher()
 	{
+		System.out.printf("%-22s%-22s%-22s\n","Titel","ISBN","Anzahl Exemplare");
+		
 		for (Buch buch : alleBuecher)
 		{
 			Buch ab = buch;			
-			System.out.println("Titel: " + ab.getTitel() + "\nISBN: " + ab.getIsbn() + "\nAnzahl Exemplare: " + ab.getAnzahlExemplare());
-			System.out.println("----------------");
+			System.out.printf("%-22s%-22s%-30d\n", buch.getTitel(), buch.getIsbn(), buch.getAnzahlExemplare());
 		}		
-		System.out.println("Anzahl Bücher: " + anzahlBuecher);
+		System.out.println("--------------\nAnzahl Bücher: " + anzahlBuecher);
 	}
 	
 
