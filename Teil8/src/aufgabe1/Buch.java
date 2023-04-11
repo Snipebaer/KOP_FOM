@@ -1,25 +1,32 @@
 package aufgabe1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Buch {
+	
+	public static List<Buch> alleBuecher = new ArrayList<Buch>();
 	
 	private String titel;
 	private String isbn;
 	private int anzahlExemplare;
 	
-	private static int AnzahlBuecher;
+	private static int anzahlBuecher;
 	
 	public Buch()
 	{
-		AnzahlBuecher++;
+		alleBuecher.add(this);
+		anzahlBuecher++;
 	}
 	
 	public Buch(String titel, String isbn, int anzahlExemplare)
 	{
 		this.titel = titel;
 		this.isbn = isbn;
-		this.anzahlExemplare = anzahlExemplare;
+		this.anzahlExemplare = anzahlExemplare;		
 		
-		AnzahlBuecher++;
+		alleBuecher.add(this);		
+		anzahlBuecher++;
 	}
 	
 	public void setTitel(String titel)
@@ -50,6 +57,22 @@ public class Buch {
 	public int getAnzahlExemplare()
 	{
 		return this.anzahlExemplare;
+	}
+	
+	public static int AnzahlBuecher()
+	{
+		return anzahlBuecher;
+	}	
+	
+	public static void printAlleBuecher()
+	{
+		for (Buch buch : alleBuecher)
+		{
+			Buch ab = buch;			
+			System.out.println("Titel: " + ab.getTitel() + "\nISBN: " + ab.getIsbn() + "\nAnzahl Exemplare: " + ab.getAnzahlExemplare());
+			System.out.println("----------------");
+		}		
+		System.out.println("Anzahl Bücher: " + anzahlBuecher);
 	}
 	
 
