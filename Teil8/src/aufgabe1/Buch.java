@@ -6,9 +6,11 @@ public class Buch {
 	private String isbn;
 	private int anzahlExemplare;
 	
+	private static int AnzahlBuecher;
+	
 	public Buch()
 	{
-		
+		AnzahlBuecher++;
 	}
 	
 	public Buch(String titel, String isbn, int anzahlExemplare)
@@ -16,6 +18,8 @@ public class Buch {
 		this.titel = titel;
 		this.isbn = isbn;
 		this.anzahlExemplare = anzahlExemplare;
+		
+		AnzahlBuecher++;
 	}
 	
 	public void setTitel(String titel)
