@@ -21,26 +21,9 @@ public class Person {
 		return anzahlPersonen;
 	}
 	
-	// Methode um den Namen zu setzen
-	public void setName(String name)
+	public void ausgeben()
 	{
-		this.name = name;
-	}
-	
-	// Methode um den Vornamen zu setzen
-	public void setVorname(String vorname)
-	{
-		this.vorname = vorname;
-	}
-	
-	public String getName()
-	{
-		return name;
-	}
-	
-	public String getVorname()
-	{
-		return vorname;
+		System.out.println(this.vorname + " " + this.name);
 	}
 	
 	public void printCredentials()

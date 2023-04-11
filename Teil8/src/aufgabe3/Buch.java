@@ -8,8 +8,7 @@ public class Buch {
 	public static List<Buch> alleBuecher = new ArrayList<Buch>();
 	private static int anzahlBuecher;
 	
-	private String titel;
-	private String isbn;
+	private String titel, isbn, untertitel="not defined";	
 	private int anzahlExemplare;
 	
 	public Buch(String titel, String isbn, int anzahlExemplare)
@@ -22,52 +21,25 @@ public class Buch {
 		anzahlBuecher++;
 	}
 	
-	public void setTitel(String titel)
+	public Buch(String titel, String isbn, int anzahlExemplare, String untertitel)
 	{
-		this.titel = titel;
+		this(titel, isbn, anzahlExemplare); //aufgabe 4	
+		this.untertitel = untertitel;
+		
+		alleBuecher.add(this);		
+		anzahlBuecher++;
 	}
 	
-	public String getTitel()
+	public void ausgeben()
 	{
-		return this.titel;
-	}
-	
-	public void setIsbn(String isbn)
-	{
-		this.isbn = isbn;
-	}
-	
-	public String getIsbn()
-	{
-		return this.isbn;
-	}
-	
-	public void setAnzahlExemplare(int anzahlExemplare)
-	{
-		this.anzahlExemplare = anzahlExemplare;
-	}
-	
-	public int getAnzahlExemplare()
-	{
-		return this.anzahlExemplare;
-	}
+		System.out.printf("%-22s%-22s%-22d%-22s\n",this.titel, this.isbn, this.anzahlExemplare, this.untertitel);
+	}	
 	
 	public static int AnzahlBuecher()
 	{
 		return anzahlBuecher;
 	}	
-	
-	public static void printAlleBuecher()
-	{
-		System.out.printf("%-22s%-22s%-22s\n","Titel","ISBN","Anzahl Exemplare");
-		
-		for (Buch buch : alleBuecher)
-		{
-			Buch ab = buch;			
-			System.out.printf("%-22s%-22s%-30d\n", ab.getTitel(), ab.getIsbn(), ab.getAnzahlExemplare());
-		}		
-		System.out.println("--------------\nAnzahl Bücher: " + anzahlBuecher);
-	}
+
 	
 
 }
