@@ -18,5 +18,35 @@ public class Buch {
 		this.anzahlExemplare = anzahlExemplare;
 	}
 	
+	public void setTitel(String titel)
+	{
+		this.titel = titel;
+	}
+	
+	public String getTitel()
+	{
+		return this.titel;
+	}
+	
+	public void setIsbn(String isbn)
+	{
+		this.isbn = isbn;
+	}
+	
+	public String getIsbn()
+	{
+		return this.isbn;
+	}
+	
+	public void setAnzahlExemplare(int anzahlExemplare)
+	{
+		this.anzahlExemplare = anzahlExemplare;
+	}
+	
+	public int getAnzahlExemplare()
+	{
+		return this.anzahlExemplare;
+	}
+	
 
 }
