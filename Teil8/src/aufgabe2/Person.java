@@ -21,7 +21,7 @@ public class Person {
 		anzahlPersonen++;
 	}
 	
-	public static int getAnzahlPersonen()
+	public static int AnzahlPersonen()
 	{
 		return anzahlPersonen;
 	}
