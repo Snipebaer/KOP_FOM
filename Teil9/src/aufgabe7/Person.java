@@ -34,6 +34,6 @@ public class Person {
 	
 	public String toString()
 	{
-		return name + " " + vorname;	
+		return "Name: " + name + "\nVorname: " + vorname;	
 	}
 }

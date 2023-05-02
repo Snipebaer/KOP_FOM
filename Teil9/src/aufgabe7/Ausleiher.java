@@ -42,7 +42,7 @@ public class Ausleiher extends Person{
 	
 	public String toString()
 	{
-		return super.toString() + " mit Ausleihernummer: " + ausleiherNummer;
+		return super.toString() + "\nAusleihernummer: " + ausleiherNummer;
 	}
 	
 	

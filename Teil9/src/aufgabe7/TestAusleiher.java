@@ -11,7 +11,7 @@ public class TestAusleiher {
 //		refAusleiher.printCredentials();
 		
 		Ausleiher a1 = new Ausleiher("Mustermann", "Max", 5);
-		System.out.println(a1.toString());
+		System.out.println(a1);
 		
 		
 		
