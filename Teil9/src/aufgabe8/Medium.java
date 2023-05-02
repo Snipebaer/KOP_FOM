@@ -2,10 +2,10 @@ package aufgabe8;
 
 public class Medium {
 	
-	protected String mediumNummer;
-	protected String titel;
-	protected String unterTitel;
-	protected int anzahlExemplare;
+	private String mediumNummer;
+	private String titel;
+	private String unterTitel;
+	private int anzahlExemplare;
 	
 //	private static int bestand;
 	
@@ -27,7 +27,7 @@ public class Medium {
 	
 	public String toString()
 	{
-		return "[Medium]: " + titel + " mit Mediumnummer: " + mediumNummer + ", Bestand: " + anzahlExemplare;
+		return titel + " mit Mediumnummer: " + mediumNummer + ", Bestand: " + anzahlExemplare;
 		
 //		System.out.println("[Medium]: " + titel + " mit Mediumnummer: " + mediumNummer + ", Bestand: " + anzahlExemplare);
 	}

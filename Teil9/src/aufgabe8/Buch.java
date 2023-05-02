@@ -16,7 +16,9 @@ public class Buch extends Medium{
 	
 	public String toString()
 	{
-		return "[Buch]: " + titel + " mit IBSN: " + mediumNummer + ", Bestand: " + anzahlExemplare;
+		return "[Buch]: " + super.toString();
+		
+//		return "[Buch]: " + titel + " mit IBSN: " + mediumNummer + ", Bestand: " + anzahlExemplare;
 //		System.out.println("[Buch]: " + titel + " mit IBSN: " + mediumNummer + ", Bestand: " + anzahlExemplare);
 	}	
 	

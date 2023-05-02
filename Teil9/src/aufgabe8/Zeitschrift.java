@@ -12,7 +12,9 @@ public class Zeitschrift extends Medium {
 	
 	public String toString()
 	{
-		return "[Zeitschrift]: " + titel + " mit ISSN: " + mediumNummer + ", Bestand: " + anzahlExemplare;
+		return "[Zeitschrift]: " + super.toString();
+		
+//		return "[Zeitschrift]: " + titel + " mit ISSN: " + mediumNummer + ", Bestand: " + anzahlExemplare;
 //		System.out.println("[Zeitschrift]: " + titel + " mit ISSN: " + mediumNummer + ", Bestand: " + anzahlExemplare);
 	}
 	

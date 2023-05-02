@@ -7,7 +7,7 @@ public class TestMedium {
 
 		
 		Zeitschrift z1 = new Zeitschrift("123-456", "Simgri", "down under", 5);
-		z1.ausgeben();
+//		z1.ausgeben();
 	}
 
 }
