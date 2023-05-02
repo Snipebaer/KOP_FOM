@@ -10,10 +10,7 @@ public class TestBestandsausgabe {
 		alleMedien[0] = new Buch("123-456", "Simgri Buch", "Down Under", 5);
 		alleMedien[1] = new Buch("567-8999", "Simgri Buch2", "Down Over", 15);
 		alleMedien[2] = new Zeitschrift("5-55-2", "Simgri Zeitschrift", "Up Under", 3);
-//		alleMedien[3] = new Medium("5-522445-2", "Siawdwadwdmgri Zeitschrift", "Up Unwafawder", 3);
-
-		
-		
+//		alleMedien[3] = new Medium("5-522445-2", "Siawdwadwdmgri Zeitschrift", "Up Unwafawder", 3);		
 		
 		System.out.println("Anzahl der verschiedenen Medien: " + (Buch.getBestand() + Zeitschrift.getBestand()));
 		
