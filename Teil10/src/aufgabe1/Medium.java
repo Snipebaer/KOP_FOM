@@ -1,10 +1,11 @@
 package aufgabe1;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Medium {
 	
-	private String mediumNummer;
+	protected String mediumNummer;
 	private String titel;
 	private String unterTitel;
 	private int anzahlExemplare;
@@ -12,22 +13,23 @@ public class Medium {
 //	private static int bestand;
 	
 	public Medium (Scanner sc)
-	{
-		Scanner eingabe = new Scanner(System.in);
-		
-		System.out.println("Bitte geben Sie einen Namen für das Medium ein: ");
-		this.titel = eingabe.next();
-		
-		System.out.println("Bitte geben Sie einen Untertitel für das Medium ein: ");
-		this.unterTitel = eingabe.next();		
-		
-		System.out.println("Bitte geben Sie eine Mediumnummer ein: ");
-		this.mediumNummer = eingabe.next();
-		
-		System.out.println("Bitte geben Sie die Anzahl Exemplare für das Medium ein: ");
-		this.anzahlExemplare = eingabe.nextInt();
-		
-//		eingabe.close();
+	{		
+		try
+		{		
+			System.out.println("Bitte geben Sie einen Namen für das Medium ein: ");
+			this.titel = sc.next();
+			
+			System.out.println("Bitte geben Sie einen Untertitel für das Medium ein: ");
+			this.unterTitel = sc.next();		
+			
+			System.out.println("Bitte geben Sie die Anzahl Exemplare für das Medium ein: ");
+			this.anzahlExemplare = sc.nextInt();
+		}
+		catch(InputMismatchException ex)
+		{
+			ex.printStackTrace();
+			System.out.println("Bitte Zahl eingeben.");
+		}
 	}
 	
 	public Medium(String mediumNummer, String titel, int anzahlExemplare)
@@ -53,7 +55,7 @@ public class Medium {
 	
 	public String toString()
 	{
-		return titel + " mit Mediumnummer: " + mediumNummer + ", Bestand: " + anzahlExemplare;
+		return titel + ", Bestand: " + anzahlExemplare;
 		
 //		System.out.println("[Medium]: " + titel + " mit Mediumnummer: " + mediumNummer + ", Bestand: " + anzahlExemplare);
 	}

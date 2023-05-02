@@ -9,8 +9,12 @@ public class Buch extends Medium{
 
 	public Buch(Scanner sc)
 	{
-		super(sc);
-		bestand++;
+		super(sc);		
+		
+		System.out.println("Bitte geben Sie eine ISBN für das Buch ein: ");
+		this.mediumNummer = sc.next();				
+		
+		bestand++;		
 	}
 	
 	public Buch(String isbn, String titel, String unterTitel, int anzahlExemplare)
@@ -21,7 +25,7 @@ public class Buch extends Medium{
 	
 	public String toString()
 	{
-		return "[Buch]: " + super.toString();
+		return "[Buch]: " + super.toString() + " mit ISBN: " + this.mediumNummer;
 	}	
 	
 	public static int getBestand()
