@@ -14,9 +14,10 @@ public class Buch extends Medium{
 		bestand++;
 	}
 	
-	public void ausgeben()
+	public String toString()
 	{
-		System.out.println("[Buch]: " + titel + " mit IBSN: " + mediumNummer + ", Bestand: " + anzahlExemplare);
+		return "[Buch]: " + titel + " mit IBSN: " + mediumNummer + ", Bestand: " + anzahlExemplare;
+//		System.out.println("[Buch]: " + titel + " mit IBSN: " + mediumNummer + ", Bestand: " + anzahlExemplare);
 	}	
 	
 	public static int getBestand()

@@ -25,9 +25,11 @@ public class Medium {
 //		return bestand;
 //	}
 	
-	public void ausgeben()
+	public String toString()
 	{
-		System.out.println("[Medium]: " + titel + " mit Mediumnummer: " + mediumNummer + ", Bestand: " + anzahlExemplare);
+		return "[Medium]: " + titel + " mit Mediumnummer: " + mediumNummer + ", Bestand: " + anzahlExemplare;
+		
+//		System.out.println("[Medium]: " + titel + " mit Mediumnummer: " + mediumNummer + ", Bestand: " + anzahlExemplare);
 	}
 
 }

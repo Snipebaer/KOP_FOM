@@ -10,9 +10,10 @@ public class Zeitschrift extends Medium {
 		bestand++;
 	}
 	
-	public void ausgeben()
+	public String toString()
 	{
-		System.out.println("[Zeitschrift]: " + titel + " mit ISSN: " + mediumNummer + ", Bestand: " + anzahlExemplare);
+		return "[Zeitschrift]: " + titel + " mit ISSN: " + mediumNummer + ", Bestand: " + anzahlExemplare;
+//		System.out.println("[Zeitschrift]: " + titel + " mit ISSN: " + mediumNummer + ", Bestand: " + anzahlExemplare);
 	}
 	
 	public static int getBestand()

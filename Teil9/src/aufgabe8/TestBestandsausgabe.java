@@ -11,10 +11,12 @@ public class TestBestandsausgabe {
 		alleMedien[1] = new Buch("567-8999", "Simgri Buch2", "Down Over", 15);
 		alleMedien[2] = new Zeitschrift("5-55-2", "Simgri Zeitschrift", "Up Under", 3);
 		
-		for (Medium medium : alleMedien)
+		System.out.println("Anzahl der verschiedenen Medien: " + (Buch.getBestand() + Zeitschrift.getBestand()));
+		
+		
+		for (Medium element : alleMedien)
 		{
-			medium.ausgeben();
-			System.out.println("-------");
+			System.out.println(element);
 		}
 
 	}
