@@ -51,5 +51,10 @@ public class Login {
 		
 		System.out.println("Doing things......");
 	}
+	
+	public int addiere(int a, int b)
+	{
+		return a+b;
+	}
 
 }
