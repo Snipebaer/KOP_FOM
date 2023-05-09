@@ -24,9 +24,9 @@ public class TintenstrahlDrucker implements Drucker{
 		System.out.println("Tintenstrahldrucker" + this.druckerID + " ist bereits eingeschaltet.\n");
 	}
 	
-	public int drucken(String text) throws DruckerNichtEingeschaltetException
+	public int drucken(String text) //throws DruckerNichtEingeschaltetException
 	{
-		if(!this.druckerEingeschaltet) throw new DruckerNichtEingeschaltetException("Tintenstrahldrucker" + this.druckerID + " nicht eingeschaltet. Druck kann nicht gestartet werden.");
+		//if(!this.druckerEingeschaltet) throw new DruckerNichtEingeschaltetException("Tintenstrahldrucker" + this.druckerID + " nicht eingeschaltet. Druck kann nicht gestartet werden.");
 
 		System.out.println("Tintenstrahldrucker" + this.druckerID + " meldet sich");
 		System.out.println(text + "\n");

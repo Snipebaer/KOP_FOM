@@ -24,9 +24,9 @@ public class LaserDrucker implements Drucker {
 		System.out.println("Laserdrucker" + this.druckerID + " ist bereits eingeschaltet.\n");
 	}
 	
-	public int drucken(String text) throws DruckerNichtEingeschaltetException
+	public int drucken(String text) //throws DruckerNichtEingeschaltetException
 	{
-		if(!this.druckerEingeschaltet) throw new DruckerNichtEingeschaltetException("Laserdrucker" + this.druckerID + " nicht eingeschaltet. Druck kann nicht gestartet werden.");
+//		if(!this.druckerEingeschaltet) throw new DruckerNichtEingeschaltetException("Laserdrucker" + this.druckerID + " nicht eingeschaltet. Druck kann nicht gestartet werden.");
 
 		System.out.println("Drucker Laser" + this.druckerID + " meldet sich");
 		System.out.println(text + "\n");
@@ -34,9 +34,9 @@ public class LaserDrucker implements Drucker {
 		return DRUCK_ERFOLGREICH;
 	}
 	
-	public int testAusdruck() throws DruckerNichtEingeschaltetException
+	public int testAusdruck() //throws DruckerNichtEingeschaltetException
 	{
-		if(!this.druckerEingeschaltet) throw new DruckerNichtEingeschaltetException("Laserdrucker" + this.druckerID + " nicht eingeschaltet. Testdruck kann nicht gestartet werden.");
+//		if(!this.druckerEingeschaltet) throw new DruckerNichtEingeschaltetException("Laserdrucker" + this.druckerID + " nicht eingeschaltet. Testdruck kann nicht gestartet werden.");
 		
 		System.out.println("Drucker Laser" + this.druckerID + " meldet sich");
 		System.out.println("Test erfolgreich\n");
