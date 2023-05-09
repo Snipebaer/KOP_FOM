@@ -1,3 +1,5 @@
+package aufgabe3;
+
 public interface Scanner
 {
 	String GERAET_AUS = "Gerät ausgeschaltet";

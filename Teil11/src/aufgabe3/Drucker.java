@@ -8,8 +8,8 @@ public interface Drucker
    public static final int DRUCK_ERFOLGREICH = 0;
    
 
-   public int drucken (String text) throws DruckerNichtEingeschaltetException;
-   public int testAusdruck() throws DruckerNichtEingeschaltetException;
+   public int drucken (String text);
+   public int testAusdruck();
    
-   public void druckerEinschalten();
+//   public void druckerEinschalten();
 }
