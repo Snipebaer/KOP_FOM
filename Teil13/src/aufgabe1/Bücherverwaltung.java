@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.Vector;
 
 
-public class Bücherverwaltung
+public class Bücherverwaltung 
 {
 private Vector<Buch> arr = new Vector<Buch>();
 

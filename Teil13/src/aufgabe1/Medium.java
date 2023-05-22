@@ -5,7 +5,7 @@ package aufgabe1;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class Medium implements Comparable<Medium>
+public class Medium implements java.lang.Comparable<Medium>
 {
    protected String titel;
    protected String mediumNummer;
