@@ -1,7 +1,10 @@
 package aufgabe1;
+import java.util.Collections;
+import java.util.List;
 //Datei: Bücherverwaltung.java
 import java.util.Scanner;
 import java.util.Vector;
+
 
 public class Bücherverwaltung
 {
@@ -46,8 +49,15 @@ private void auswahlAuswerten()
 
 private void bestandAusgeben()
 {
-   for (int i = 0; i < Buch.getBestand(); i++)
-      System.out.println (arr.toString());
+//   for (int i = 0; i < Buch.getBestand(); i++)
+//      System.out.println (arr.get(i));
+	
+	Collections.sort(arr);
+	
+	for (Buch element : arr)
+	{
+		System.out.println(element);
+	}
 }
 
 public static void main (String args[])

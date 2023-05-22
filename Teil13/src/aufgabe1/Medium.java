@@ -5,7 +5,7 @@ package aufgabe1;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class Medium
+public class Medium implements Comparable<Medium>
 {
    protected String titel;
    protected String mediumNummer;
@@ -44,6 +44,17 @@ public class Medium
 	            eingabe.nextLine(); // Zeilenumbruch einlesen
 	         }
 	      }
+   }
+   
+   public int compareTo(Medium ref)
+   {
+//	   if(this.titel.length() > ref.titel.length())
+//		   return 1;
+//	   else if(this.titel.length() == ref.titel.length())
+//		   return 0;
+//	   else
+//		   return -1;	   
+	   return this.titel.compareToIgnoreCase(ref.titel);
    }
    
    public String toString()
