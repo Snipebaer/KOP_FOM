@@ -29,11 +29,15 @@ public class TestSerialisierung {
 		FileInputStream fis = new FileInputStream("Ausleiher.txt");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		
-		a1 = (Ausleiher) ois.readObject();
-		a1.printCredentials();
+		System.out.println((Ausleiher)ois.readObject());
 		
-		a2 = (Ausleiher) ois.readObject();
-		a2.printCredentials();
+		ois.close();
+		
+//		a1 = (Ausleiher) ois.readObject();
+//		a1.printCredentials();
+//		
+//		a2 = (Ausleiher) ois.readObject();
+//		a2.printCredentials();
 		
 //		System.out.println(ois.readObject().toString());		
 //		System.out.println(ois.readObject().toString());
