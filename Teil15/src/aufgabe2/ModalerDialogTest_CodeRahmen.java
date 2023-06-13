@@ -19,16 +19,16 @@ public class ModalerDialogTest_CodeRahmen
 
 
       JButton start = new JButton ("Dialog anzeigen");
+      
       // Controller für die Schaltfläche des Vaterfensters implementieren.
       start.addActionListener (new ActionListener() 
       {		
-		public void actionPerformed(ActionEvent action) {
-			
+		public void actionPerformed(ActionEvent action) 
+		{			
 			dialog.setSize(200,200);
-			dialog.setVisible(true);
-			
+			dialog.setVisible(true);			
 		}
-	});      
+	  });      
       
       frame.setLayout (new FlowLayout());
       frame.add (start);
