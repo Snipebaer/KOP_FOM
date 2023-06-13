@@ -1,4 +1,4 @@
-package Swing_JFrame_JButton;
+package test_Swing_JFrame_JButton;
 
 import java.awt.event.*;
 import javax.swing.JButton;
@@ -12,7 +12,7 @@ public class ButtonController implements ActionListener {
 		counter++;
 		
 		JButton refSource = (JButton) action.getSource();
-		refSource.setText("Gedrückt:" + counter);
+		refSource.setText("Gedrückt: " + counter);
 	}
 	
 

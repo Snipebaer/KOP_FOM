@@ -1,4 +1,4 @@
-package Swing_JFrame_JButton;
+package test_Swing_JFrame_JButton;
 
 import javax.swing.JFrame;
 import javax.swing.JButton;
@@ -13,7 +13,7 @@ public class View {
 		// Hauptfenster erzeugen
 		JFrame jframe = new JFrame("Hauptfenster");
 		
-		JButton button = new JButton("Schaltflaeche 1");
+		JButton button = new JButton("Gedrückt: 0");
 		button.addActionListener(new ButtonController());
 		
 		
