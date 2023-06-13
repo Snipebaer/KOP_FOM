@@ -14,13 +14,13 @@ import javax.swing.table.TableRowSorter;
 import entitaeten.Buch;
 import entitaeten.MediumVerwaltung;
 
-public class BestandAnzeigenGUI . . . . .
+public class BestandAnzeigenGUI extends JDialog
 {
    private static final long serialVersionUID = 1L;
 
    public BestandAnzeigenGUI(JFrame parent)
    {
-      super (parent, "Bestand anzeigen", true);
+      super(parent, "Bestand anzeigen", true);
 
       dialogAufbauen();
 
@@ -63,12 +63,12 @@ class TableModel extends AbstractTableModel
    // Spaltennamen für die Tabelle festlegen.
    private String[] columnNames = { "Titel", "Untertitel", "ISBN", "Anzahl"}; 
 
-   private MediumVerwaltung buecher = . . . . .
+   private MediumVerwaltung buecher = MediumVerwaltung.getRefToInstance();
 
    // Überschriebene Methode zur Rückgabe des Spaltennamens.
    public String getColumnName (int col) 
    {
-      return . . . . .
+      return columnNames[col];
    }
 
    // Überschriebene Methode zur Rückgabe der Spaltenanzahl.
@@ -80,7 +80,7 @@ class TableModel extends AbstractTableModel
    // Überschriebene Methode zur Rückgabe der Zeilenanzahl.
    public int getRowCount() 
    {
-      . . . . .
+      return buecher.getSize();
    }
 
    // Überschriebene Methode zur Rückgabe des Wertes einer Zelle.
@@ -89,11 +89,11 @@ class TableModel extends AbstractTableModel
       Buch ref = buecher.getBuch (row);
       if (column == 0)
          return ref.getTitel();
-      else if (. . . . .)
+      else if (column == 1)
          return ref.getUnterTitel();
-      else if (. . . . .)
-         return . . . . .
+      else if (column == 2)
+         return ref.getMediumNummer();
       else
-         return . . . . .
+         return ref.getAnzahlExemplare();
    }
 }

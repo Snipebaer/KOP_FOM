@@ -30,6 +30,7 @@ public class MediumVerwaltung
                arr.add (new Buch (scan.next(),scan.next(),
                                scan.next(),scan.nextInt()));
             }
+            scan.close(); // von [Kilian] hinzugefügt
             fis.close();
          }
       }
